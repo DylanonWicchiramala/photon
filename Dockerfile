@@ -16,8 +16,8 @@ RUN apt-get update && apt-get install -y \
 # Create working directory
 WORKDIR /app
 
-# Download and prepare the Photon data
-RUN wget -O - https://download1.graphhopper.com/public/photon-db-latest.tar.bz2 | pbzip2 -cd | tar x -C /app
+# # Download and prepare the Photon data
+# RUN wget -O - https://download1.graphhopper.com/public/photon-db-latest.tar.bz2 | pbzip2 -cd | tar x -C /app
 
 # Copy project files (assuming your project source is in the current directory)
 COPY . /app
